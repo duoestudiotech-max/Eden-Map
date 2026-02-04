@@ -133,7 +133,6 @@ export default function PlayButton({ text = 'Áudio', source, duration = 150 }) 
       activeOpacity={0.7}
     >
       <Text style={styles.text}>{text}</Text>
-
       <View style={styles.iconWrapper}>
         <Svg
           height={radius * 2 + strokeWidth}

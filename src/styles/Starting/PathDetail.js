@@ -11,7 +11,7 @@ export const createStyles = (theme) =>
     container: {
       alignItems: 'center',
       paddingHorizontal: spacing.lg,
-      paddingTop: spacing.xs + spacing.lg,
+      paddingTop: spacing.xs,
     },
     headerContainer: {
       alignItems: 'flex-start',

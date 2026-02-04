@@ -7,6 +7,7 @@ import ButtonPrimary from '../../../components/ButtonPrimary';
 import GlassBox from '../../../components/GlassBox';
 import { useAudioPlayer } from 'expo-audio';
 import HeaderAjuster from '../../../components/HeaderAjuster';
+import { AUDIOS } from '../../../../assets/json/Audios';
 
 function Timer({ initialSeconds, source, autoPlaySignal, onFinish }) {
   const { theme } = useTheme();
@@ -111,18 +112,25 @@ function Timer({ initialSeconds, source, autoPlaySignal, onFinish }) {
   );
 }
 
-export default function PlayerMeditacao({ onComplete }) {
+export default function PlayerMeditacao({ selectedPath, semanaAtual, onComplete }) {
   const { theme } = useTheme();
   const styles = createStyles(theme);
   const { buscarConfigRespiracao } = useJourney();
 
   const [timeRespiracao, setTimeRespiracao] = useState(5);
-  const [timeMeditacao, setTimeMeditacao] = useState(10);
   const [respiracaoAtivada, setRespiracaoAtivada] = useState(false);
   const [startMeditacaoSignal, setStartMeditacaoSignal] = useState(0);
   const [allComplete, setAllComplete] = useState(false);
 
+  const [data, setdata] = useState({});
+
   useEffect(() => {
+    if (semanaAtual) {
+      setdata(AUDIOS[selectedPath][Math.ceil(semanaAtual / 2) - 1])
+    }else {
+      setdata(AUDIOS.Generica[Math.ceil(semanaAtual / 2) - 1])
+    }
+    console.log(data);
     const carregarConfig = async () => {
       const config = await buscarConfigRespiracao();
       if (config?.ativado && config?.tempo) {
@@ -165,8 +173,8 @@ export default function PlayerMeditacao({ onComplete }) {
       <GlassBox>
         <Text style={styles.text}>Meditação</Text>
         <Timer
-          initialSeconds={timeMeditacao * 60}
-          source="https://dccnvoncldisnxpvijco.supabase.co/storage/v1/object/public/Eden%20Map%20Audios/AtencaoPlena3%20Tratado.mp3"
+          initialSeconds={data.duracao}
+          source={data.link}
           autoPlaySignal={startMeditacaoSignal}
           onFinish={handleMeditacaoFinish}
         />

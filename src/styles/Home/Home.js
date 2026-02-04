@@ -6,20 +6,21 @@ export const createStyles = (theme) =>
   StyleSheet.create({
     container: {
       alignItems: 'center',
-      marginTop: spacing.md,
-      paddingHorizontal: spacing.sm,
+      marginTop: spacing.lg,
+      width: spacing.giant,
+      alignSelf: 'center'
     },
     title: {
       fontSize: fontSize.xxl,
       fontFamily: fontFamily.b7,
       color: theme.fontColor,
+      alignSelf: 'flex-start',
     },
     text: {
       fontSize: fontSize.md,
       fontFamily: fontFamily.r4,
       color: theme.fontColor,
       alignSelf: 'flex-start',
-      marginLeft: spacing.sm,
       marginBottom: spacing.xs,
     },
     highlight: {
@@ -31,7 +32,6 @@ export const createStyles = (theme) =>
       color: theme.fontColor,
       alignSelf: 'flex-start',
       marginBottom: spacing.xs / 2,
-      paddingHorizontal: spacing.sm,
     },
     line:{
       height:1,

@@ -223,7 +223,7 @@ export default function PathDetail({ selectedPathName, onConfirm, onBack }) {
         <View>
 
           <VideoPlayer
-            videoId="dQw4w9WgXcQ"
+            videoId="hmxjX2bpzr4"
             height={165}
             width={260}
           />

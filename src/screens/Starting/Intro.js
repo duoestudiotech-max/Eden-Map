@@ -8,10 +8,12 @@ import PlayButton from '../../components/PlayButton';
 import ButtonPrimary from '../../components/ButtonPrimary';
 import { spacing } from '../../theme/texts';
 import { createStyles } from '../../styles/Starting/Intro';
+import { AUDIOS } from '../../../assets/json/Audios';
 
 export default function Intro({onStartGuide}) {
   const { theme } = useTheme();
   const styles = createStyles(theme);
+  const { nome, link, duracao } = AUDIOS.TUTORIAL;
 
   return (
     <View style={styles.container}>
@@ -21,9 +23,9 @@ export default function Intro({onStartGuide}) {
       </Text>
       
       <PlayButton 
-        text="Tutorial - Desejo"
-        source="https://dccnvoncldisnxpvijco.supabase.co/storage/v1/object/public/Eden%20Map%20Audios/AtencaoPlena1%20Tratado.mp3"
-        duration={150}
+        text= {nome}
+        source= {link}
+        duration={duracao}
       />
       
       <Text style={styles.guideText}>

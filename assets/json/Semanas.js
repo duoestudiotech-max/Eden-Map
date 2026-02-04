@@ -147,7 +147,7 @@ export const DESCRICAOCENA = {
 export const VIDEOS = [
   { 
     id: 1, 
-    video: 'ukUogPR-y-4', 
+    video: 'Jp71ZRLJP_0', 
     topico: 'Como funciona o Eden Map.',
     sinopse: [
       'Neste vídeo tutorial, veja como funciona o ',
@@ -159,7 +159,7 @@ export const VIDEOS = [
   },
   { 
     id: 2, 
-    video: 'RylLBe8yAwc', 
+    video: 'Jp71ZRLJP_0', 
     topico: 'A gratidão transforma!',
     sinopse: [
       'Neste vídeo, descubra como a ',
@@ -171,7 +171,7 @@ export const VIDEOS = [
   },
   { 
     id: 3, 
-    video: 'RylLBe8yAwc', 
+    video: '5ZgPA9maP_g', 
     topico: 'Existe um momento perfeito?',
     sinopse: [
       'Este vídeo revela como o ',
@@ -183,7 +183,7 @@ export const VIDEOS = [
   },
   { 
     id: 4, 
-    video: 'RylLBe8yAwc', 
+    video: 'b7YvEnjog6o', 
     topico: 'O poder do foco!',
     sinopse: [
       'Descubra como a ',
@@ -195,7 +195,7 @@ export const VIDEOS = [
   },
   { 
     id: 5, 
-    video: 'RylLBe8yAwc', 
+    video: '8fdaP5XR8hA', 
     topico: 'A entrada do subconsciente.',
     sinopse: [
       'Este vídeo revela como ',
@@ -207,7 +207,7 @@ export const VIDEOS = [
   },
   { 
     id: 6, 
-    video: 'RylLBe8yAwc', 
+    video: '8fdaP5XR8hA', 
     topico: 'Quebrando crenças limitantes.',
     sinopse: [
       'Este vídeo mostra como ',
@@ -219,7 +219,7 @@ export const VIDEOS = [
   },
   { 
     id: 7, 
-    video: 'RylLBe8yAwc', 
+    video: '8fdaP5XR8hA', 
     topico: 'O valor do silêncio.',
     sinopse: [
       'Este vídeo mostra como o ',
@@ -231,7 +231,7 @@ export const VIDEOS = [
   },
   { 
     id: 8, 
-    video: 'RylLBe8yAwc', 
+    video: 'Lb236bnDho4', 
     topico: 'Quem é você?',
     sinopse: [
       'Este vídeo investiga ',
@@ -243,7 +243,7 @@ export const VIDEOS = [
   },
   { 
     id: 9, 
-    video: 'RylLBe8yAwc', 
+    video: 'JVnRTZKsviw', 
     topico: 'Visualize e manifeste.',
     sinopse: [
       'Este vídeo ensina como a ',
@@ -255,7 +255,7 @@ export const VIDEOS = [
   },
   { 
     id: 10, 
-    video: 'RylLBe8yAwc', 
+    video: '9xvgYyRXSnc', 
     topico: 'Não há o que temer.',
     sinopse: [
       '',
@@ -267,7 +267,7 @@ export const VIDEOS = [
   },
   { 
     id: 11, 
-    video: 'RylLBe8yAwc', 
+    video: '9xvgYyRXSnc', 
     topico: 'Nunca é tarde demais.',
     sinopse: [
       'Este vídeo questiona ',
@@ -279,7 +279,7 @@ export const VIDEOS = [
   },
   { 
     id: 12, 
-    video: 'RylLBe8yAwc', 
+    video: '9xvgYyRXSnc', 
     topico: 'O universo é mental!',
     sinopse: [
       'Este vídeo mostra como ',

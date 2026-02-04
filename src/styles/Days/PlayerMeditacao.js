@@ -6,7 +6,7 @@ export const createStyles = (theme) =>
     container: {
       flex: 1,
       paddingHorizontal: spacing.lg,
-      paddingBottom: spacing.sm
+      paddingBottom: spacing.xl
     },
     topSpacer: {
       flex: 1
